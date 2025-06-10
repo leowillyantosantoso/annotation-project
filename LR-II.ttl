@@ -12,6 +12,18 @@
     bqbiol:isPropertyOf local:process_background_Na ;
     bqbiol:isVersionOf <https://identifiers.org/opb:OPB_00318> .
 
+<http://omex-library.org/physical_process.omex/model.cellml#calcium_release.i_rel>
+    bqbiol:isPropertyOf local:process_i_rel ;
+    bqbiol:isVersionOf <https://identifiers.org/opb:OPB_00340> .
+
+<http://omex-library.org/physical_process.omex/model.cellml#calcium_transfer.i_tr>
+    bqbiol:isPropertyOf local:process_i_tr ;
+    bqbiol:isVersionOf <https://identifiers.org/opb:OPB_00340> .
+
+<http://omex-library.org/physical_process.omex/model.cellml#calcium_uptake.i_up>
+    bqbiol:isPropertyOf local:process_i_up ;
+    bqbiol:isVersionOf <https://identifiers.org/opb:OPB_00340> .
+
 <http://omex-library.org/physical_process.omex/model.cellml#plateau_potassium_current.i_Kp>
     bqbiol:isPropertyOf local:process_Kp ;
     bqbiol:isVersionOf <https://identifiers.org/opb:OPB_00318> .
@@ -156,6 +168,18 @@ local:SinkParticipant0015
     semsim:hasMultiplier "3"^^rdf:double ;
     semsim:hasPhysicalEntityReference local:sink_NaCa_Na .
 
+local:SinkParticipant0016
+    semsim:hasMultiplier "1"^^rdf:double ;
+    semsim:hasPhysicalEntityReference local:sink_intracellular_ca .
+
+local:SinkParticipant0017
+    semsim:hasMultiplier "1"^^rdf:double ;
+    semsim:hasPhysicalEntityReference local:sink_nsr .
+
+local:SinkParticipant0018
+    semsim:hasMultiplier "1"^^rdf:double ;
+    semsim:hasPhysicalEntityReference local:sink_jsr .
+
 local:SourceParticipant0000
     semsim:hasPhysicalEntityReference local:extracellular .
 
@@ -212,6 +236,18 @@ local:SourceParticipant0014
 local:SourceParticipant0015
     semsim:hasMultiplier "1"^^rdf:double ;
     semsim:hasPhysicalEntityReference local:source_NaCa_Ca .
+
+local:SourceParticipant0016
+    semsim:hasMultiplier "1"^^rdf:double ;
+    semsim:hasPhysicalEntityReference local:source_jsr .
+
+local:SourceParticipant0017
+    semsim:hasMultiplier "1"^^rdf:double ;
+    semsim:hasPhysicalEntityReference local:source_intracellular_ca_up .
+
+local:SourceParticipant0018
+    semsim:hasMultiplier "1"^^rdf:double ;
+    semsim:hasPhysicalEntityReference local:source_nsr .
 
 local:Xr_gate
     semsim:hasSinkParticipant local:SinkParticipant0007 ;
@@ -307,6 +343,18 @@ local:process_fast_sodium
     semsim:hasSinkParticipant local:SinkParticipant0003 ;
     semsim:hasSourceParticipant local:SourceParticipant0003 .
 
+local:process_i_rel
+    semsim:hasSinkParticipant local:SinkParticipant0016 ;
+    semsim:hasSourceParticipant local:SourceParticipant0016 .
+
+local:process_i_tr
+    semsim:hasSinkParticipant local:SinkParticipant0018 ;
+    semsim:hasSourceParticipant local:SourceParticipant0018 .
+
+local:process_i_up
+    semsim:hasSinkParticipant local:SinkParticipant0017 ;
+    semsim:hasSourceParticipant local:SourceParticipant0017 .
+
 local:process_slow_inward_ca
     semsim:hasMediatorParticipant local:MediatorParticipant0001 ;
     semsim:hasSinkParticipant local:SinkParticipant0006 ;
@@ -344,6 +392,18 @@ local:sink_fast_sodium
     bqbiol:is <https://identifiers.org/ChEBI:29101> ;
     bqbiol:isPartOf local:intracellular .
 
+local:sink_intracellular_ca
+    bqbiol:is <https://identifiers.org/CHEBI:29108> ;
+    bqbiol:isPartOf <https://identifiers.org/FMA:66836> .
+
+local:sink_jsr
+    bqbiol:is <https://identifiers.org/CHEBI:29108> ;
+    bqbiol:isPartOf <https://identifiers.org/FMA:62374> .
+
+local:sink_nsr
+    bqbiol:is <https://identifiers.org/CHEBI:29108> ;
+    bqbiol:isPartOf <https://identifiers.org/FMA:62373> .
+
 local:sink_slow_inward_ca
     bqbiol:is <https://identifiers.org/ChEBI:29108> ;
     bqbiol:isPartOf local:intracellular .
@@ -379,6 +439,18 @@ local:source_bNa
 local:source_fast_sodium
     bqbiol:is <https://identifiers.org/ChEBI:29101> ;
     bqbiol:isPartOf local:extracellular .
+
+local:source_intracellular_ca_up
+    bqbiol:is <https://identifiers.org/CHEBI:29108> ;
+    bqbiol:isPartOf <https://identifiers.org/FMA:66836> .
+
+local:source_jsr
+    bqbiol:is <https://identifiers.org/CHEBI:29108> ;
+    bqbiol:isPartOf <https://identifiers.org/FMA:62374> .
+
+local:source_nsr
+    bqbiol:is <https://identifiers.org/CHEBI:29108> ;
+    bqbiol:isPartOf <https://identifiers.org/FMA:62373> .
 
 local:source_slow_inward_ca
     bqbiol:is <https://identifiers.org/ChEBI:29108> ;
