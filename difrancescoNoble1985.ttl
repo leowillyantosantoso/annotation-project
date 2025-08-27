@@ -1,0 +1,494 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix semsim: <http://bime.uw.edu/semsim/> .
+@prefix bqbiol: <http://biomodels.net/biology-qualifiers/> .
+@prefix OMEXlib: <http://omex-library.org/> .
+@prefix local: <http://omex-library.org/physical_process.omex/model.rdf#> .
+
+<http://omex-library.org/physical_process.omex/model.cellml#extracellular_potassium_concentration.i_fK>
+    bqbiol:isPropertyOf local:process_extracellular_potassium_ifk ;
+    bqbiol:isVersionOf <https://identifiers.org/opb:OPB_00318> .
+
+<http://omex-library.org/physical_process.omex/model.cellml#extracellular_potassium_concentration.i_p>
+    bqbiol:isPropertyOf local:local-entity-0, local:process_extracellular_potassium_ip ;
+    bqbiol:isVersionOf <https://identifiers.org/opb:OPB_00318> .
+
+<http://omex-library.org/physical_process.omex/model.cellml#fast_sodium_channel_h_gate.V>
+    bqbiol:isPropertyOf local:fast_sodium_channel_h_gate ;
+    bqbiol:isVersionOf <https://identifiers.org/opb:OPB_00506> .
+
+<http://omex-library.org/physical_process.omex/model.cellml#fast_sodium_channel_m_gate.V>
+    bqbiol:isPropertyOf local:fast_sodium_channel_m_gate ;
+    bqbiol:isVersionOf <https://identifiers.org/opb:OPB_00506> .
+
+<http://omex-library.org/physical_process.omex/model.cellml#fast_sodium_current.i_Na>
+    bqbiol:isPropertyOf local:process_fast_sodium ;
+    bqbiol:isVersionOf <https://identifiers.org/opb:OPB_00318> .
+
+<http://omex-library.org/physical_process.omex/model.cellml#hyperpolarising_activated_current.Kc>
+    bqbiol:isPropertyOf local:local-entity-0 ;
+    bqbiol:isVersionOf <https://identifiers.org/opb:OPB_00340> .
+
+<http://omex-library.org/physical_process.omex/model.cellml#intracellular_calcium_concentration.i_Ca_b>
+    bqbiol:isPropertyOf local:process_intracellular_calcium_iCab ;
+    bqbiol:isVersionOf <https://identifiers.org/opb:OPB_00318> .
+
+<http://omex-library.org/physical_process.omex/model.cellml#intracellular_calcium_concentration.i_rel>
+    bqbiol:isPropertyOf local:process_intracellular_calcium_rel ;
+    bqbiol:isVersionOf <https://identifiers.org/opb:OPB_00318> .
+
+<http://omex-library.org/physical_process.omex/model.cellml#intracellular_calcium_concentration.i_sica>
+    bqbiol:isPropertyOf local:process_intracellular_calcium_iSica ;
+    bqbiol:isVersionOf <https://identifiers.org/opb:OPB_00318> .
+
+<http://omex-library.org/physical_process.omex/model.cellml#intracellular_calcium_concentration.i_tr>
+    bqbiol:isPropertyOf local:process_intracellular_calcium_itr ;
+    bqbiol:isVersionOf <https://identifiers.org/opb:OPB_00318> .
+
+<http://omex-library.org/physical_process.omex/model.cellml#intracellular_calcium_concentration.i_up>
+    bqbiol:isPropertyOf local:process_intracellular_calcium_iup ;
+    bqbiol:isVersionOf <https://identifiers.org/opb:OPB_00318> .
+
+<http://omex-library.org/physical_process.omex/model.cellml#intracellular_sodium_concentration.i_NaCa>
+    bqbiol:isPropertyOf local:local-entity-0, local:process_intracellular_sodium_iNaCa ;
+    bqbiol:isVersionOf <https://identifiers.org/opb:OPB_00318> .
+
+<http://omex-library.org/physical_process.omex/model.cellml#intracellular_sodium_concentration.i_Na_b>
+    bqbiol:isPropertyOf local:process_intracellular_sodium_iNab ;
+    bqbiol:isVersionOf <https://identifiers.org/opb:OPB_00318> .
+
+<http://omex-library.org/physical_process.omex/model.cellml#intracellular_sodium_concentration.i_fNa>
+    bqbiol:isPropertyOf local:process_intracellular_sodium_ifNa ;
+    bqbiol:isVersionOf <https://identifiers.org/opb:OPB_00318> .
+
+<http://omex-library.org/physical_process.omex/model.cellml#membrane.V>
+    bqbiol:isPropertyOf local:local-entity-0 ;
+    bqbiol:isVersionOf <https://identifiers.org/opb:OPB_00506> .
+
+<http://omex-library.org/physical_process.omex/model.cellml#membrane.i_K>
+    bqbiol:isPropertyOf local:process_delayed_potassium_current ;
+    bqbiol:isVersionOf <https://identifiers.org/opb:OPB_00318> .
+
+<http://omex-library.org/physical_process.omex/model.cellml#membrane.i_to>
+    bqbiol:isPropertyOf local:process_transient_outward_current_ito ;
+    bqbiol:isVersionOf <https://identifiers.org/opb:OPB_00318> .
+
+<http://omex-library.org/physical_process.omex/model.cellml#second_inward_current.i_siK>
+    bqbiol:isPropertyOf local:process_second_inward_current_potassium_isiK ;
+    bqbiol:isVersionOf <https://identifiers.org/opb:OPB_00318> .
+
+<http://omex-library.org/physical_process.omex/model.cellml#second_inward_current.i_siNa>
+    bqbiol:isPropertyOf local:process_second_inward_current_sodium_isiNa ;
+    bqbiol:isVersionOf <https://identifiers.org/opb:OPB_00318> .
+
+<http://omex-library.org/physical_process.omex/model.cellml#second_inward_current_d_gate.V>
+    bqbiol:isPropertyOf local:second_inward_current_d_gate ;
+    bqbiol:isVersionOf <https://identifiers.org/opb:OPB_00506> .
+
+<http://omex-library.org/physical_process.omex/model.cellml#second_inward_current_f_gate.V>
+    bqbiol:isPropertyOf local:second_inward_current_f_gate ;
+    bqbiol:isVersionOf <https://identifiers.org/opb:OPB_00506> .
+
+<http://omex-library.org/physical_process.omex/model.cellml#time_dependent_potassium_current.i_K>
+    bqbiol:isPropertyOf local:process_time_dependent_potassium_iK1 ;
+    bqbiol:isVersionOf <https://identifiers.org/opb:OPB_00318> .
+
+<http://omex-library.org/physical_process.omex/model.cellml#time_dependent_potassium_current_x_gate.V>
+    bqbiol:isPropertyOf local:time_dependent_potassium_current_x_gate ;
+    bqbiol:isVersionOf <https://identifiers.org/opb:OPB_00506> .
+
+<http://omex-library.org/physical_process.omex/model.cellml#time_independent_potassium_current.i_K1>
+    bqbiol:isPropertyOf local:process_time_independent_potassium_iK1 ;
+    bqbiol:isVersionOf <https://identifiers.org/opb:OPB_00318> .
+
+local:MediatorParticipant0000
+    semsim:hasPhysicalEntityReference local:mediator_sodium_channel .
+
+local:MediatorParticipant0001
+    semsim:hasPhysicalEntityReference local:mediator_sodium_channel .
+
+local:MediatorParticipant0002
+    semsim:hasPhysicalEntityReference local:mediator_sodium_channel .
+
+local:MediatorParticipant0003
+    semsim:hasPhysicalEntityReference local:mediator_sodium_channel .
+
+local:MediatorParticipant0004
+    semsim:hasPhysicalEntityReference local:mediator_sodium_channel .
+
+local:MediatorParticipant0005
+    semsim:hasPhysicalEntityReference local:mediator_potassium_channel .
+
+local:MediatorParticipant0006
+    semsim:hasPhysicalEntityReference local:mediator_potassium_channel .
+
+local:MediatorParticipant0007
+    semsim:hasPhysicalEntityReference local:mediator_potassium_channel .
+
+local:MediatorParticipant0008
+    semsim:hasPhysicalEntityReference local:mediator_potassium_channel .
+
+local:MediatorParticipant0009
+    semsim:hasPhysicalEntityReference local:mediator_potassium_channel .
+
+local:MediatorParticipant0010
+    semsim:hasPhysicalEntityReference local:mediator_potassium_channel .
+
+local:MediatorParticipant0011
+    semsim:hasPhysicalEntityReference local:mediator_potassium_channel .
+
+local:MediatorParticipant0012
+    semsim:hasPhysicalEntityReference local:mediator_calcium_channel .
+
+local:MediatorParticipant0013
+    semsim:hasPhysicalEntityReference local:mediator_calcium_channel .
+
+local:MediatorParticipant0014
+    semsim:hasPhysicalEntityReference local:mediator_calcium_channel .
+
+local:MediatorParticipant0015
+    semsim:hasPhysicalEntityReference local:mediator_calcium_channel .
+
+local:MediatorParticipant0016
+    semsim:hasPhysicalEntityReference local:mediator_calcium_channel .
+
+local:SinkParticipant0000
+    semsim:hasMultiplier "1"^^rdf:double ;
+    semsim:hasPhysicalEntityReference local:sink_sodium .
+
+local:SinkParticipant0001
+    semsim:hasMultiplier "1"^^rdf:double ;
+    semsim:hasPhysicalEntityReference local:sink_sodium .
+
+local:SinkParticipant0002
+    semsim:hasMultiplier "1"^^rdf:double ;
+    semsim:hasPhysicalEntityReference local:sink_sodium .
+
+local:SinkParticipant0003
+    semsim:hasMultiplier "1"^^rdf:double ;
+    semsim:hasPhysicalEntityReference local:sink_sodium .
+
+local:SinkParticipant0004
+    semsim:hasMultiplier "1"^^rdf:double ;
+    semsim:hasPhysicalEntityReference local:sink_sodium .
+
+local:SinkParticipant0005
+    semsim:hasPhysicalEntityReference local:sink_fast_sodium_channel_m_gate .
+
+local:SinkParticipant0006
+    semsim:hasPhysicalEntityReference local:sink_fast_sodium_channel_h_gate .
+
+local:SinkParticipant0007
+    semsim:hasMultiplier "1"^^rdf:double ;
+    semsim:hasPhysicalEntityReference local:sink_potassium .
+
+local:SinkParticipant0008
+    semsim:hasMultiplier "1"^^rdf:double ;
+    semsim:hasPhysicalEntityReference local:sink_potassium .
+
+local:SinkParticipant0009
+    semsim:hasMultiplier "1"^^rdf:double ;
+    semsim:hasPhysicalEntityReference local:sink_potassium .
+
+local:SinkParticipant0010
+    semsim:hasMultiplier "1"^^rdf:double ;
+    semsim:hasPhysicalEntityReference local:sink_potassium .
+
+local:SinkParticipant0011
+    semsim:hasMultiplier "1"^^rdf:double ;
+    semsim:hasPhysicalEntityReference local:sink_potassium .
+
+local:SinkParticipant0012
+    semsim:hasMultiplier "1"^^rdf:double ;
+    semsim:hasPhysicalEntityReference local:sink_potassium .
+
+local:SinkParticipant0013
+    semsim:hasMultiplier "1"^^rdf:double ;
+    semsim:hasPhysicalEntityReference local:sink_potassium .
+
+local:SinkParticipant0014
+    semsim:hasPhysicalEntityReference local:sink_time_dependent_potassium_current_x_gate .
+
+local:SinkParticipant0015
+    semsim:hasPhysicalEntityReference local:sink_second_inward_current_d_gate .
+
+local:SinkParticipant0016
+    semsim:hasPhysicalEntityReference local:sink_second_inward_current_f_gate .
+
+local:SinkParticipant0017
+    semsim:hasMultiplier "1"^^rdf:double ;
+    semsim:hasPhysicalEntityReference local:sink_calcium .
+
+local:SinkParticipant0018
+    semsim:hasMultiplier "1"^^rdf:double ;
+    semsim:hasPhysicalEntityReference local:sink_calcium .
+
+local:SinkParticipant0019
+    semsim:hasMultiplier "1"^^rdf:double ;
+    semsim:hasPhysicalEntityReference local:sink_calcium .
+
+local:SinkParticipant0020
+    semsim:hasMultiplier "1"^^rdf:double ;
+    semsim:hasPhysicalEntityReference local:sink_calcium .
+
+local:SinkParticipant0021
+    semsim:hasMultiplier "1"^^rdf:double ;
+    semsim:hasPhysicalEntityReference local:sink_calcium .
+
+local:SourceParticipant0000
+    semsim:hasMultiplier "1"^^rdf:double ;
+    semsim:hasPhysicalEntityReference local:source_sodium .
+
+local:SourceParticipant0001
+    semsim:hasMultiplier "1"^^rdf:double ;
+    semsim:hasPhysicalEntityReference local:source_sodium .
+
+local:SourceParticipant0002
+    semsim:hasMultiplier "1"^^rdf:double ;
+    semsim:hasPhysicalEntityReference local:source_sodium .
+
+local:SourceParticipant0003
+    semsim:hasMultiplier "1"^^rdf:double ;
+    semsim:hasPhysicalEntityReference local:source_sodium .
+
+local:SourceParticipant0004
+    semsim:hasMultiplier "1"^^rdf:double ;
+    semsim:hasPhysicalEntityReference local:source_sodium .
+
+local:SourceParticipant0005
+    semsim:hasPhysicalEntityReference local:source_fast_sodium_channel_m_gate .
+
+local:SourceParticipant0006
+    semsim:hasPhysicalEntityReference local:source_fast_sodium_channel_h_gate .
+
+local:SourceParticipant0007
+    semsim:hasMultiplier "1"^^rdf:double ;
+    semsim:hasPhysicalEntityReference local:source_potassium .
+
+local:SourceParticipant0008
+    semsim:hasMultiplier "1"^^rdf:double ;
+    semsim:hasPhysicalEntityReference local:source_potassium .
+
+local:SourceParticipant0009
+    semsim:hasMultiplier "1"^^rdf:double ;
+    semsim:hasPhysicalEntityReference local:source_potassium .
+
+local:SourceParticipant0010
+    semsim:hasMultiplier "1"^^rdf:double ;
+    semsim:hasPhysicalEntityReference local:source_potassium .
+
+local:SourceParticipant0011
+    semsim:hasMultiplier "1"^^rdf:double ;
+    semsim:hasPhysicalEntityReference local:source_potassium .
+
+local:SourceParticipant0012
+    semsim:hasMultiplier "1"^^rdf:double ;
+    semsim:hasPhysicalEntityReference local:source_potassium .
+
+local:SourceParticipant0013
+    semsim:hasMultiplier "1"^^rdf:double ;
+    semsim:hasPhysicalEntityReference local:source_potassium .
+
+local:SourceParticipant0014
+    semsim:hasPhysicalEntityReference local:source_time_dependent_potassium_current_x_gate .
+
+local:SourceParticipant0015
+    semsim:hasPhysicalEntityReference local:source_second_inward_current_d_gate .
+
+local:SourceParticipant0016
+    semsim:hasPhysicalEntityReference local:source_second_inward_current_f_gate .
+
+local:SourceParticipant0017
+    semsim:hasMultiplier "1"^^rdf:double ;
+    semsim:hasPhysicalEntityReference local:source_calcium .
+
+local:SourceParticipant0018
+    semsim:hasMultiplier "1"^^rdf:double ;
+    semsim:hasPhysicalEntityReference local:source_calcium .
+
+local:SourceParticipant0019
+    semsim:hasMultiplier "1"^^rdf:double ;
+    semsim:hasPhysicalEntityReference local:source_calcium .
+
+local:SourceParticipant0020
+    semsim:hasMultiplier "1"^^rdf:double ;
+    semsim:hasPhysicalEntityReference local:source_calcium .
+
+local:SourceParticipant0021
+    semsim:hasMultiplier "1"^^rdf:double ;
+    semsim:hasPhysicalEntityReference local:source_calcium .
+
+local:extracellular
+    bqbiol:is <https://identifiers.org/FMA:70022> .
+
+local:fast_sodium_channel_h_gate
+    semsim:hasSinkParticipant local:SinkParticipant0006 ;
+    semsim:hasSourceParticipant local:SourceParticipant0006 .
+
+local:fast_sodium_channel_m_gate
+    semsim:hasSinkParticipant local:SinkParticipant0005 ;
+    semsim:hasSourceParticipant local:SourceParticipant0005 .
+
+local:intracellular
+    bqbiol:is <https://identifiers.org/FMA:66836> ;
+    bqbiol:isPartOf <https://identifiers.org/FMA:14067> .
+
+local:local-entity-0
+    bqbiol:isPartOf <https://identifiers.org/FMA:63841>, <https://identifiers.org/PR:P48768>, <https://identifiers.org/PR:P50993> .
+
+local:mediator_calcium_channel
+    bqbiol:is <https://identifiers.org/GO:0005267> .
+
+local:mediator_potassium_channel
+    bqbiol:is <https://identifiers.org/GO:0005267> .
+
+local:mediator_sodium_channel
+    bqbiol:is <https://identifiers.org/GO:0005272> .
+
+local:process_delayed_potassium_current
+    semsim:hasMediatorParticipant local:MediatorParticipant0010 ;
+    semsim:hasSinkParticipant local:SinkParticipant0012 ;
+    semsim:hasSourceParticipant local:SourceParticipant0012 .
+
+local:process_extracellular_potassium_ifk
+    semsim:hasMediatorParticipant local:MediatorParticipant0005 ;
+    semsim:hasSinkParticipant local:SinkParticipant0007 ;
+    semsim:hasSourceParticipant local:SourceParticipant0007 .
+
+local:process_extracellular_potassium_ip
+    semsim:hasMediatorParticipant local:MediatorParticipant0006 ;
+    semsim:hasSinkParticipant local:SinkParticipant0008 ;
+    semsim:hasSourceParticipant local:SourceParticipant0008 .
+
+local:process_fast_sodium
+    semsim:hasMediatorParticipant local:MediatorParticipant0000 ;
+    semsim:hasSinkParticipant local:SinkParticipant0000 ;
+    semsim:hasSourceParticipant local:SourceParticipant0000 .
+
+local:process_intracellular_calcium_iCab
+    semsim:hasMediatorParticipant local:MediatorParticipant0012 ;
+    semsim:hasSinkParticipant local:SinkParticipant0017 ;
+    semsim:hasSourceParticipant local:SourceParticipant0017 .
+
+local:process_intracellular_calcium_iSica
+    semsim:hasMediatorParticipant local:MediatorParticipant0013 ;
+    semsim:hasSinkParticipant local:SinkParticipant0018 ;
+    semsim:hasSourceParticipant local:SourceParticipant0018 .
+
+local:process_intracellular_calcium_itr
+    semsim:hasMediatorParticipant local:MediatorParticipant0015 ;
+    semsim:hasSinkParticipant local:SinkParticipant0020 ;
+    semsim:hasSourceParticipant local:SourceParticipant0020 .
+
+local:process_intracellular_calcium_iup
+    semsim:hasMediatorParticipant local:MediatorParticipant0014 ;
+    semsim:hasSinkParticipant local:SinkParticipant0019 ;
+    semsim:hasSourceParticipant local:SourceParticipant0019 .
+
+local:process_intracellular_calcium_rel
+    semsim:hasMediatorParticipant local:MediatorParticipant0016 ;
+    semsim:hasSinkParticipant local:SinkParticipant0021 ;
+    semsim:hasSourceParticipant local:SourceParticipant0021 .
+
+local:process_intracellular_sodium_iNaCa
+    semsim:hasMediatorParticipant local:MediatorParticipant0004 ;
+    semsim:hasSinkParticipant local:SinkParticipant0004 ;
+    semsim:hasSourceParticipant local:SourceParticipant0004 .
+
+local:process_intracellular_sodium_iNab
+    semsim:hasMediatorParticipant local:MediatorParticipant0001 ;
+    semsim:hasSinkParticipant local:SinkParticipant0001 ;
+    semsim:hasSourceParticipant local:SourceParticipant0001 .
+
+local:process_intracellular_sodium_ifNa
+    semsim:hasMediatorParticipant local:MediatorParticipant0002 ;
+    semsim:hasSinkParticipant local:SinkParticipant0002 ;
+    semsim:hasSourceParticipant local:SourceParticipant0002 .
+
+local:process_second_inward_current_potassium_isiK
+    semsim:hasMediatorParticipant local:MediatorParticipant0009 ;
+    semsim:hasSinkParticipant local:SinkParticipant0011 ;
+    semsim:hasSourceParticipant local:SourceParticipant0011 .
+
+local:process_second_inward_current_sodium_isiNa
+    semsim:hasMediatorParticipant local:MediatorParticipant0003 ;
+    semsim:hasSinkParticipant local:SinkParticipant0003 ;
+    semsim:hasSourceParticipant local:SourceParticipant0003 .
+
+local:process_time_dependent_potassium_iK1
+    semsim:hasMediatorParticipant local:MediatorParticipant0008 ;
+    semsim:hasSinkParticipant local:SinkParticipant0010 ;
+    semsim:hasSourceParticipant local:SourceParticipant0010 .
+
+local:process_time_independent_potassium_iK1
+    semsim:hasMediatorParticipant local:MediatorParticipant0007 ;
+    semsim:hasSinkParticipant local:SinkParticipant0009 ;
+    semsim:hasSourceParticipant local:SourceParticipant0009 .
+
+local:process_transient_outward_current_ito
+    semsim:hasMediatorParticipant local:MediatorParticipant0011 ;
+    semsim:hasSinkParticipant local:SinkParticipant0013 ;
+    semsim:hasSourceParticipant local:SourceParticipant0013 .
+
+local:second_inward_current_d_gate
+    semsim:hasSinkParticipant local:SinkParticipant0015 ;
+    semsim:hasSourceParticipant local:SourceParticipant0015 .
+
+local:second_inward_current_f_gate
+    semsim:hasSinkParticipant local:SinkParticipant0016 ;
+    semsim:hasSourceParticipant local:SourceParticipant0016 .
+
+local:sink_calcium
+    bqbiol:is <https://identifiers.org/ChEBI:29108> .
+
+local:sink_fast_sodium_channel_h_gate
+    bqbiol:isPartOf local:intracellular .
+
+local:sink_fast_sodium_channel_m_gate
+    bqbiol:isPartOf local:intracellular .
+
+local:sink_potassium
+    bqbiol:is <https://identifiers.org/ChEBI:29103> ;
+    bqbiol:isPartOf local:intracellular .
+
+local:sink_second_inward_current_d_gate
+    bqbiol:isPartOf local:intracellular .
+
+local:sink_second_inward_current_f_gate
+    bqbiol:isPartOf local:intracellular .
+
+local:sink_sodium
+    bqbiol:is <https://identifiers.org/ChEBI:29101> ;
+    bqbiol:isPartOf local:intracellular .
+
+local:sink_time_dependent_potassium_current_x_gate
+    bqbiol:isPartOf local:intracellular .
+
+local:source_calcium
+    bqbiol:is <https://identifiers.org/ChEBI:29108> .
+
+local:source_fast_sodium_channel_h_gate
+    bqbiol:isPartOf local:extracellular .
+
+local:source_fast_sodium_channel_m_gate
+    bqbiol:isPartOf local:extracellular .
+
+local:source_potassium
+    bqbiol:is <https://identifiers.org/ChEBI:29103> ;
+    bqbiol:isPartOf local:extracellular .
+
+local:source_second_inward_current_d_gate
+    bqbiol:isPartOf local:extracellular .
+
+local:source_second_inward_current_f_gate
+    bqbiol:isPartOf local:extracellular .
+
+local:source_sodium
+    bqbiol:is <https://identifiers.org/ChEBI:29101> ;
+    bqbiol:isPartOf local:extracellular .
+
+local:source_time_dependent_potassium_current_x_gate
+    bqbiol:isPartOf local:extracellular .
+
+local:time_dependent_potassium_current_x_gate
+    semsim:hasSinkParticipant local:SinkParticipant0014 ;
+    semsim:hasSourceParticipant local:SourceParticipant0014 .
