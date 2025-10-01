@@ -4,6 +4,10 @@
 @prefix OMEXlib: <http://omex-library.org/> .
 @prefix local: <http://omex-library.org/physical_process.omex/model.rdf#> .
 
+<http://omex-library.org/physical_process.omex/model.cellml#background_channel_current.i_b>
+    bqbiol:isPropertyOf local:process_background_channel ;
+    bqbiol:isVersionOf <https://identifiers.org/opb:OPB_00318> .
+
 <http://omex-library.org/physical_process.omex/model.cellml#fast_sodium_current.i_Na>
     bqbiol:isPropertyOf local:process_fast_sodium ;
     bqbiol:isVersionOf <https://identifiers.org/opb:OPB_00318> .
@@ -19,6 +23,10 @@
 <http://omex-library.org/physical_process.omex/model.cellml#fast_sodium_current_m_gate.V>
     bqbiol:isPropertyOf local:fast_sodium_channel_m_gate ;
     bqbiol:isVersionOf <https://identifiers.org/opb:OPB_00506> .
+
+<http://omex-library.org/physical_process.omex/model.cellml#plateau_potassium_current.i_Kp>
+    bqbiol:isPropertyOf local:process_plateau_potassium ;
+    bqbiol:isVersionOf <https://identifiers.org/opb:OPB_00318> .
 
 <http://omex-library.org/physical_process.omex/model.cellml#slow_inward_current.i_si>
     bqbiol:isPropertyOf local:process_slow_inward_current ;
@@ -37,11 +45,11 @@
     bqbiol:isVersionOf <https://identifiers.org/opb:OPB_00318> .
 
 <http://omex-library.org/physical_process.omex/model.cellml#time_dependent_potassium_current_X_gate.V>
-    bqbiol:isPropertyOf local:time_dependent_potassium_channel_X_gate ;
+    bqbiol:isPropertyOf local:time_dependent_potassium_X_gate ;
     bqbiol:isVersionOf <https://identifiers.org/opb:OPB_00506> .
 
 <http://omex-library.org/physical_process.omex/model.cellml#time_dependent_potassium_current_Xi_gate.V>
-    bqbiol:isPropertyOf local:time_dependent_potassium_channel_Xi_gate ;
+    bqbiol:isPropertyOf local:time_dependent_potassium_Xi_gate ;
     bqbiol:isVersionOf <https://identifiers.org/opb:OPB_00506> .
 
 <http://omex-library.org/physical_process.omex/model.cellml#time_independent_potassium_current.i_K1>
@@ -49,7 +57,7 @@
     bqbiol:isVersionOf <https://identifiers.org/opb:OPB_00318> .
 
 <http://omex-library.org/physical_process.omex/model.cellml#time_independent_potassium_current_K1_gate.V>
-    bqbiol:isPropertyOf local:time_independent_potassium_channel_K1_gate ;
+    bqbiol:isPropertyOf local:time_independent_potassium_K1_gate ;
     bqbiol:isVersionOf <https://identifiers.org/opb:OPB_00506> .
 
 local:MediatorParticipant0000
@@ -59,10 +67,16 @@ local:MediatorParticipant0001
     semsim:hasPhysicalEntityReference local:mediator_slow_inward_current .
 
 local:MediatorParticipant0002
-    semsim:hasPhysicalEntityReference local:mediator_potassium_channel .
+    semsim:hasPhysicalEntityReference local:mediator_time_dependent_potassium_channel .
 
 local:MediatorParticipant0003
-    semsim:hasPhysicalEntityReference local:mediator_potassium_channel .
+    semsim:hasPhysicalEntityReference local:mediator_time_independent_potassium_channel .
+
+local:MediatorParticipant0004
+    semsim:hasPhysicalEntityReference local:mediator_plateau_potassium_channel .
+
+local:MediatorParticipant0005
+    semsim:hasPhysicalEntityReference local:mediator_background_channel .
 
 local:SinkParticipant0000
     semsim:hasPhysicalEntityReference local:sink_sodium_channel_h_gate .
@@ -88,21 +102,29 @@ local:SinkParticipant0006
     semsim:hasPhysicalEntityReference local:sink_slow_inward_current .
 
 local:SinkParticipant0007
-    semsim:hasPhysicalEntityReference local:sink_time_dependent_potassium_channel_X_gate .
+    semsim:hasPhysicalEntityReference local:sink_time_dependent_potassium_Xi_gate .
 
 local:SinkParticipant0008
-    semsim:hasPhysicalEntityReference local:sink_time_dependent_potassium_channel_Xi_gate .
+    semsim:hasPhysicalEntityReference local:sink_time_dependent_potassium_X_gate .
 
 local:SinkParticipant0009
-    semsim:hasPhysicalEntityReference local:sink_time_independent_potassium_channel_K1_gate .
+    semsim:hasMultiplier "1"^^rdf:double ;
+    semsim:hasPhysicalEntityReference local:sink_time_dependent_potassium .
 
 local:SinkParticipant0010
-    semsim:hasMultiplier "1"^^rdf:double ;
-    semsim:hasPhysicalEntityReference local:sink_potassium .
+    semsim:hasPhysicalEntityReference local:sink_time_independent_potassium_K1_gate .
 
 local:SinkParticipant0011
     semsim:hasMultiplier "1"^^rdf:double ;
-    semsim:hasPhysicalEntityReference local:sink_potassium .
+    semsim:hasPhysicalEntityReference local:sink_time_independent_potassium .
+
+local:SinkParticipant0012
+    semsim:hasMultiplier "1"^^rdf:double ;
+    semsim:hasPhysicalEntityReference local:sink_plateau_potassium .
+
+local:SinkParticipant0013
+    semsim:hasMultiplier "1"^^rdf:double ;
+    semsim:hasPhysicalEntityReference local:sink_background_channel .
 
 local:SourceParticipant0000
     semsim:hasPhysicalEntityReference local:source_sodium_channel_h_gate .
@@ -128,21 +150,29 @@ local:SourceParticipant0006
     semsim:hasPhysicalEntityReference local:source_slow_inward_current .
 
 local:SourceParticipant0007
-    semsim:hasPhysicalEntityReference local:source_time_dependent_potassium_channel_X_gate .
+    semsim:hasPhysicalEntityReference local:source_time_dependent_potassium_Xi_gate .
 
 local:SourceParticipant0008
-    semsim:hasPhysicalEntityReference local:source_time_dependent_potassium_channel_Xi_gate .
+    semsim:hasPhysicalEntityReference local:source_time_dependent_potassium_X_gate .
 
 local:SourceParticipant0009
-    semsim:hasPhysicalEntityReference local:source_time_independent_potassium_channel_K1_gate .
+    semsim:hasMultiplier "1"^^rdf:double ;
+    semsim:hasPhysicalEntityReference local:source_time_dependent_potassium .
 
 local:SourceParticipant0010
-    semsim:hasMultiplier "1"^^rdf:double ;
-    semsim:hasPhysicalEntityReference local:source_potassium .
+    semsim:hasPhysicalEntityReference local:source_time_independent_potassium_K1_gate .
 
 local:SourceParticipant0011
     semsim:hasMultiplier "1"^^rdf:double ;
-    semsim:hasPhysicalEntityReference local:source_potassium .
+    semsim:hasPhysicalEntityReference local:source_time_independent_potassium .
+
+local:SourceParticipant0012
+    semsim:hasMultiplier "1"^^rdf:double ;
+    semsim:hasPhysicalEntityReference local:source_plateau_potassium .
+
+local:SourceParticipant0013
+    semsim:hasMultiplier "1"^^rdf:double ;
+    semsim:hasPhysicalEntityReference local:source_background_channel .
 
 local:fast_sodium_channel_h_gate
     semsim:hasSinkParticipant local:SinkParticipant0000 ;
@@ -156,19 +186,38 @@ local:fast_sodium_channel_m_gate
     semsim:hasSinkParticipant local:SinkParticipant0002 ;
     semsim:hasSourceParticipant local:SourceParticipant0002 .
 
+local:mediator_background_channel
+    bqbiol:is <https://identifiers.org/GO:0005267> .
+
 local:mediator_fast_sodium_channel
     bqbiol:is <https://identifiers.org/GO:0005272> .
 
-local:mediator_potassium_channel
-    bqbiol:is <https://identifiers.org/GO:0005249> .
+local:mediator_plateau_potassium_channel
+    bqbiol:is <https://identifiers.org/GO:0005267> .
 
 local:mediator_slow_inward_current
     bqbiol:is <https://identifiers.org/GO:0005272> .
+
+local:mediator_time_dependent_potassium_channel
+    bqbiol:is <https://identifiers.org/GO:0005267> .
+
+local:mediator_time_independent_potassium_channel
+    bqbiol:is <https://identifiers.org/GO:0005267> .
+
+local:process_background_channel
+    semsim:hasMediatorParticipant local:MediatorParticipant0005 ;
+    semsim:hasSinkParticipant local:SinkParticipant0013 ;
+    semsim:hasSourceParticipant local:SourceParticipant0013 .
 
 local:process_fast_sodium
     semsim:hasMediatorParticipant local:MediatorParticipant0000 ;
     semsim:hasSinkParticipant local:SinkParticipant0003 ;
     semsim:hasSourceParticipant local:SourceParticipant0003 .
+
+local:process_plateau_potassium
+    semsim:hasMediatorParticipant local:MediatorParticipant0004 ;
+    semsim:hasSinkParticipant local:SinkParticipant0012 ;
+    semsim:hasSourceParticipant local:SourceParticipant0012 .
 
 local:process_slow_inward_current
     semsim:hasMediatorParticipant local:MediatorParticipant0001 ;
@@ -177,19 +226,23 @@ local:process_slow_inward_current
 
 local:process_time_dependent_potassium
     semsim:hasMediatorParticipant local:MediatorParticipant0002 ;
-    semsim:hasSinkParticipant local:SinkParticipant0010 ;
-    semsim:hasSourceParticipant local:SourceParticipant0010 .
+    semsim:hasSinkParticipant local:SinkParticipant0009 ;
+    semsim:hasSourceParticipant local:SourceParticipant0009 .
 
 local:process_time_independent_potassium
     semsim:hasMediatorParticipant local:MediatorParticipant0003 ;
     semsim:hasSinkParticipant local:SinkParticipant0011 ;
     semsim:hasSourceParticipant local:SourceParticipant0011 .
 
+local:sink_background_channel
+    bqbiol:is <https://identifiers.org/ChEBI:29103> ;
+    bqbiol:isPartOf local:intracellular .
+
 local:sink_fast_sodium
     bqbiol:is <https://identifiers.org/ChEBI:29101> ;
     bqbiol:isPartOf local:intracellular .
 
-local:sink_potassium
+local:sink_plateau_potassium
     bqbiol:is <https://identifiers.org/ChEBI:29103> ;
     bqbiol:isPartOf local:intracellular .
 
@@ -217,15 +270,23 @@ local:sink_sodium_channel_m_gate
     bqbiol:is <https://identifiers.org/FMA:66836> ;
     bqbiol:isPartOf local:intracellular .
 
-local:sink_time_dependent_potassium_channel_X_gate
+local:sink_time_dependent_potassium
+    bqbiol:is <https://identifiers.org/ChEBI:29103> ;
+    bqbiol:isPartOf local:intracellular .
+
+local:sink_time_dependent_potassium_X_gate
     bqbiol:is <https://identifiers.org/FMA:66836> ;
     bqbiol:isPartOf local:intracellular .
 
-local:sink_time_dependent_potassium_channel_Xi_gate
+local:sink_time_dependent_potassium_Xi_gate
     bqbiol:is <https://identifiers.org/FMA:66836> ;
     bqbiol:isPartOf local:intracellular .
 
-local:sink_time_independent_potassium_channel_K1_gate
+local:sink_time_independent_potassium
+    bqbiol:is <https://identifiers.org/ChEBI:29103> ;
+    bqbiol:isPartOf local:intracellular .
+
+local:sink_time_independent_potassium_K1_gate
     bqbiol:is <https://identifiers.org/FMA:66836> ;
     bqbiol:isPartOf local:intracellular .
 
@@ -237,11 +298,15 @@ local:slow_inward_channel_f_gate
     semsim:hasSinkParticipant local:SinkParticipant0005 ;
     semsim:hasSourceParticipant local:SourceParticipant0005 .
 
+local:source_background_channel
+    bqbiol:is <https://identifiers.org/ChEBI:29103> ;
+    bqbiol:isPartOf local:extracellular .
+
 local:source_fast_sodium
     bqbiol:is <https://identifiers.org/ChEBI:29101> ;
     bqbiol:isPartOf local:extracellular .
 
-local:source_potassium
+local:source_plateau_potassium
     bqbiol:is <https://identifiers.org/ChEBI:29103> ;
     bqbiol:isPartOf local:extracellular .
 
@@ -269,26 +334,34 @@ local:source_sodium_channel_m_gate
     bqbiol:is <https://identifiers.org/FMA:70022> ;
     bqbiol:isPartOf local:extracellular .
 
-local:source_time_dependent_potassium_channel_X_gate
+local:source_time_dependent_potassium
+    bqbiol:is <https://identifiers.org/ChEBI:29103> ;
+    bqbiol:isPartOf local:extracellular .
+
+local:source_time_dependent_potassium_X_gate
     bqbiol:is <https://identifiers.org/FMA:70022> ;
     bqbiol:isPartOf local:extracellular .
 
-local:source_time_dependent_potassium_channel_Xi_gate
+local:source_time_dependent_potassium_Xi_gate
     bqbiol:is <https://identifiers.org/FMA:70022> ;
     bqbiol:isPartOf local:extracellular .
 
-local:source_time_independent_potassium_channel_K1_gate
+local:source_time_independent_potassium
+    bqbiol:is <https://identifiers.org/ChEBI:29103> ;
+    bqbiol:isPartOf local:extracellular .
+
+local:source_time_independent_potassium_K1_gate
     bqbiol:is <https://identifiers.org/FMA:70022> ;
     bqbiol:isPartOf local:extracellular .
 
-local:time_dependent_potassium_channel_X_gate
-    semsim:hasSinkParticipant local:SinkParticipant0007 ;
-    semsim:hasSourceParticipant local:SourceParticipant0007 .
-
-local:time_dependent_potassium_channel_Xi_gate
+local:time_dependent_potassium_X_gate
     semsim:hasSinkParticipant local:SinkParticipant0008 ;
     semsim:hasSourceParticipant local:SourceParticipant0008 .
 
-local:time_independent_potassium_channel_K1_gate
-    semsim:hasSinkParticipant local:SinkParticipant0009 ;
-    semsim:hasSourceParticipant local:SourceParticipant0009 .
+local:time_dependent_potassium_Xi_gate
+    semsim:hasSinkParticipant local:SinkParticipant0007 ;
+    semsim:hasSourceParticipant local:SourceParticipant0007 .
+
+local:time_independent_potassium_K1_gate
+    semsim:hasSinkParticipant local:SinkParticipant0010 ;
+    semsim:hasSourceParticipant local:SourceParticipant0010 .
